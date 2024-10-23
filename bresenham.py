@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Titik Awal dan Titik Akhir
-x0, y0 = 20, 10
-x1, y1 = 30, 18
+x0, y0 = 10, 5
+x1, y1 = 20, 15
 
 # Menghitung delta
 dx = abs(x1 - x0)
