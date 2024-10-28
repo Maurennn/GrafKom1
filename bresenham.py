@@ -6,13 +6,13 @@ x0, y0 = 10, 5
 x1, y1 = 20, 15
 
 # Menghitung delta
-dx = abs(x1 - x0)
-dy = abs(y1 - y0)
+dx = (x1 - x0) 
+dy = (y1 - y0) 
 
 # Inisialisasi
-X = x0
-Y = y0
-tamp = [X]
+X = x0 
+Y = y0 
+tamp = [X] 
 tamp2 = [Y]
 
 # Menentukan arah pergerakan (untuk menangani garis dengan arah negatif)
@@ -21,13 +21,13 @@ sy = 1 if y0 < y1 else -1
 
 # Parameter keputusan
 if dx > dy:  # Jika slope < 1
-    p = 2 * dy - dx
-    for _ in range(dx):
+    p = 2 * dy - dx  
+    for _ in range(dx): 
         if p >= 0:
             Y += sy
-            p -= 2 * dx
+            p -= 2 * dx 
         X += sx
-        p += 2 * dy
+        p += 2 * dy 
         tamp.append(X)
         tamp2.append(Y)
 else:  # Jika slope >= 1
